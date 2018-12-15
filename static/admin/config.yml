@@ -46,7 +46,7 @@ collections:
       - file: "src/pages/new/index.md"
         label: "New"
         name: "new"
-        fields:
+        fields: 
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "new-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
