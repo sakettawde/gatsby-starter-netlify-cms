@@ -43,12 +43,10 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "src/pages/stellar/index.md"
-        label: "Stellar"
-        name: "stellar"
+      - file: "src/pages/new/index.md"
+        label: "New"
+        name: "new"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "stellar-page"}
-          - {label: "Hero Title", name: "hero-title", widget: "string"}
-          - {label: "Hero Sub Title", name: "hero-subtitle", widget: "string"}
-          - {label: "Target Title", name: "target-title", widget: "string"}
-          - {label: "Target Content", name: "target-content", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: SubHeading, name: subheading, widget: string}, {label: ImageRight, name: image-right, widget: image}, {label: Body, name: body, widget: text},  {label: ImageLeft, name: image-left, widget: image}]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "new-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
