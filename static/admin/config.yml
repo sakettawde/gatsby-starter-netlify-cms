@@ -50,3 +50,12 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "new-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/stellar/index.md"
+        label: "Stellar"
+        name: "stellar"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "stellar-page"}
+          - {label: "Hero Title", name: "hero-title", widget: string}
+          - {label: "Hero Sub Title", name: "hero-subtitle", widget: string}
+          - {label: "Target Title", name: "target-title", widget: string}
+          - {label: "Target Content", name: "target-content", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: SubHeading, name: subheading, widget: string}, {label: ImageRight, name: image-right, widget: image}, {label: Body, name: body, widget: text},  {label: ImageLeft, name: image-left, widget: image}]}
