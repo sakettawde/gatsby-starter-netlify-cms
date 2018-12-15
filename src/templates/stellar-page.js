@@ -4,8 +4,9 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-const StellarPage = () => {
-  
+const StellarPage = ({data}) => {  
+  console.log(data)
+
   return (
     <Layout>
       <span>Hello Stellar</span>
@@ -13,6 +14,14 @@ const StellarPage = () => {
   )
 }
 
-
 export default StellarPage
 
+export const stellarPageQuery = graphql`
+  query StellarPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        hero-title
+      }
+    }
+  }
+`
