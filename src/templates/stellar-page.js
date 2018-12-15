@@ -20,7 +20,9 @@ export const stellarPageQuery = graphql`
   query StellarPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        hero-title
+        hero_title
+        hero_subtitle
+        target_title
       }
     }
   }

@@ -55,7 +55,7 @@ collections:
         name: "stellar"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "stellar-page"}
-          - {label: "Hero Title", name: "hero-title", widget: string}
-          - {label: "Hero Sub Title", name: "hero-subtitle", widget: string}
-          - {label: "Target Title", name: "target-title", widget: string}
-          - {label: "Target Content", name: "target-content", widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: SubHeading, name: subheading, widget: string}, {label: ImageRight, name: image-right, widget: image}, {label: Body, name: body, widget: text},  {label: ImageLeft, name: image-left, widget: image}]}
+          - {label: "Hero Title", name: "hero_title", widget: string}
+          - {label: "Hero Sub Title", name: "hero_subtitle", widget: string}
+          - {label: "Target Title", name: "target_title", widget: string}
+          - {label: "Target Content", name: "target_content", widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: SubHeading, name: subheading, widget: string}, {label: ImageRight, name: image-right, widget: image}, {label: Body, name: body, widget: text},  {label: ImageLeft, name: image-left, widget: image}]}
