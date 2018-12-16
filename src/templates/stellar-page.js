@@ -17,14 +17,12 @@ const StellarPage = ({data}) => {
       <span style={{fontSize:48, marginBottom:120}}>{target_title}</span>
       {target_content.map(item=>{
         return <div key={item.heading} style={{display:"flex", marginTop:12}}>
-          {/* <img style={imageStyle} src={item.image_right} alt="Stellar Grid Image" /> */}
           <PreviewCompatibleImage imageInfo={item.image_right}/>
           <div style={{display:"flex", flexDirection:"column", paddingRight:28, paddingLeft:28, paddingTop:16}}>
           <span style={{fontSize:24}}>{item.heading}</span>
           <span style={{fontSize:18}}>{item.subheading}</span>
           <span>{item.body}</span>
           </div>
-          {/* <img style={imageStyle} src={item.image_left} alt="Stellar Grid Image" /> */}
           <PreviewCompatibleImage imageInfo={item.image_left}/>
           </div>
       })}
