@@ -36,14 +36,14 @@ export const stellarPageQuery = graphql`
           body
           heading
           subheading
-          image-left{
+          image_left{
             childImageSharp {
                 fluid(maxWidth: 240, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
           }
-          image-right{
+          image_right{
             childImageSharp {
                 fluid(maxWidth: 240, quality: 100) {
                   ...GatsbyImageSharpFluid
