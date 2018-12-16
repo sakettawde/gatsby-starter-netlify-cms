@@ -6,13 +6,13 @@ target_title: Solar for everyone
 target_content:
   - body: We build beautiful solutions
     heading: Make your home
-    image_left: /img/coffee-gear.png
-    image_right: /img/chemex.jpg
+    image_left: "/img/coffee-gear.png"
+    image_right: "/img/coffee.png"
     subheading: Smart and sustainable
   - body: We build beautiful solutions as well
     heading: Make your work place
-    image_left: /img/coffee-gear.png
-    image_right: /img/chemex.jpg
+    image_left: "/img/coffee-gear.png"
+    image_right: "/img/coffee.png"
     subheading: Smart and Sustainable
 ---
 
