@@ -1,18 +1,13 @@
 ---
 templateKey: stellar-page
-hero-title: Bright Idea
-hero-subtitle: That will save the world and your pockets
-target-title: Solar is for Everyone
-target-content:
-  - body: We build beautiful systems that integrate right into your life
+hero_title: This is hero title
+hero_subtitle: This is hero sub title
+target_title: Solar for everyone
+target_content:
+  - body: We build beautiful solutions
     heading: Make your home
-    image-left: /img/meeting-space.png
-    image-right: /img/chemex.jpg
-    subheading: Smart and Sustainable
-  - body: We build beautiful systems that integrate right into your work life
-    heading: Make your Business
     image-left: /img/coffee-gear.png
-    image-right: /img/jumbotron.jpg
-    subheading: More Profitable
+    image-right: /img/chemex.jpg
+    subheading: Smart and sustainable
 ---
 
