@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage"
+import Calculator from "../components/Calculator"
 
 const StellarPage = ({ data }) => {
   console.log(data.markdownRemark)
@@ -38,16 +39,12 @@ const StellarPage = ({ data }) => {
       >
         <span style={{ fontSize: 48, marginBottom: 120 }}>{target_title}</span>
         {target_content.map(item => {
-          let imageLeft = { image: item.image_left, alt: "alt1" }
-          let imageRight = { image: item.image_right, alt: "alt2" }
-          console.log(imageRight)
+          // let imageLeft = { image: item.image_left, alt: "alt1" }
+          // let imageRight = { image: item.image_right, alt: "alt2" }
+          // console.log(imageRight)
           return (
             <div key={item.heading} style={{ display: "flex", marginTop: 12 }}>
-              <div className="tile is-parent is-vertical">
-                <article className="tile is-child">
-                  <PreviewCompatibleImage imageInfo={imageRight} />
-                </article>
-              </div>
+              <img src={item.image_right.childImageSharp.fluid.src} />
               <div
                 style={{
                   display: "flex",
@@ -61,12 +58,23 @@ const StellarPage = ({ data }) => {
                 <span style={{ fontSize: 18 }}>{item.subheading}</span>
                 <span>{item.body}</span>
               </div>
-
-              <PreviewCompatibleImage imageInfo={imageLeft} />
+              <img src={item.image_left.childImageSharp.fluid.src} />
             </div>
           )
         })}
       </div>
+      <div style={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#eee",
+          padding: 40
+        }}>
+        <span style={{fontSize:42}}>Calculate your savings!</span>
+        <Calculator/>
+        </div>
     </Layout>
   )
 }
